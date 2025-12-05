@@ -1,6 +1,7 @@
 import '@/app/global.css';
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import { Inter, EB_Garamond, Amiri_Quran } from 'next/font/google';
+import { Icon } from '@iconify/react';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,7 +27,7 @@ export default function Layout({ children }: LayoutProps<'/'>) {
           search={{
             hotKey: [
               {
-                display: '/',
+                display: <Icon icon="simple-icons:vim" className="size-6" />,
                 key: '/',
               },
             ],
