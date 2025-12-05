@@ -2,6 +2,27 @@ import '@/app/global.css';
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import { Inter, EB_Garamond, Amiri_Quran } from 'next/font/google';
 import { Icon } from '@iconify/react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://z2e.team'),
+  title: {
+    template: '%s',
+    default: 'Z2E - AI-Powered Penetration Testing',
+  },
+  description: 'Z2E is an AI-powered penetration testing framework that automates security assessments from reconnaissance to exploitation.',
+  openGraph: {
+    title: 'Z2E - AI-Powered Penetration Testing',
+    description: 'Z2E is an AI-powered penetration testing framework that automates security assessments from reconnaissance to exploitation.',
+    siteName: 'Z2E',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Z2E - AI-Powered Penetration Testing',
+    description: 'Z2E is an AI-powered penetration testing framework that automates security assessments from reconnaissance to exploitation.',
+  },
+};
 
 const inter = Inter({
   subsets: ['latin'],
