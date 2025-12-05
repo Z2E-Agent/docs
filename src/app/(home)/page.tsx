@@ -9,7 +9,7 @@ export default function HomePage() {
           <h1 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-normal font-[family-name:var(--font-eb-garamond)] leading-tight">
             Redefining pentesting through autonomous intelligence.
           </h1>
-          <p className="text-lg md:text-xl text-fd-muted-foreground max-w-2xl mb-10">
+          <p className="text-lg md:text-xl text-fd-muted-foreground max-w-2xl mb-10 font-[family-name:var(--font-amiri-quran)]">
             The fully autonomous penetration testing tool that leverages advanced LLMs to identify vulnerabilities, generate reports, and streamline your security assessments.
           </p>
           <div className="flex flex-wrap gap-4">
