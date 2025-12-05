@@ -22,7 +22,18 @@ export default function Layout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="en" className={`${inter.variable} ${ebGaramond.variable} ${amiriQuran.variable}`} suppressHydrationWarning>
       <body className="flex flex-col min-h-screen">
-        <RootProvider>{children}</RootProvider>
+        <RootProvider
+          search={{
+            hotKey: [
+              {
+                display: '/',
+                key: '/',
+              },
+            ],
+          }}
+        >
+          {children}
+        </RootProvider>
       </body>
     </html>
   );
