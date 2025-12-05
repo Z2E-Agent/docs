@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { YouTubePlayer } from '@/components/youtube-player';
 
 export default function HomePage() {
   return (
@@ -32,15 +33,7 @@ export default function HomePage() {
       {/* Video/Preview Section */}
       <section className="pb-20 px-4 mx-auto w-full max-w-[var(--fd-layout-width)]">
         <div className="max-w-4xl mx-auto">
-          <div className="aspect-video rounded-lg border border-fd-border overflow-hidden">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <YouTubePlayer videoId="dQw4w9WgXcQ" title="Z2E Demo" />
         </div>
       </section>
 
